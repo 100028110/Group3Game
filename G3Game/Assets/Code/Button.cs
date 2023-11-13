@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class buttonScript : MonoBehaviour
+public class Button : MonoBehaviour
 {
    // The public function the button will call when it is clicked
    public void loadLevel(string levelName)
