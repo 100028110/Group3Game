@@ -1,0 +1,4 @@
+repository "G3Game@BatboldInjinash@cloud"
+  path "/"
+    br "/main"
+    co "/main"
