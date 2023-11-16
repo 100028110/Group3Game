@@ -269,7 +269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8861131448931944655, guid: 399ac3e1c39995748a16b3b35ad0e2df, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 399ac3e1c39995748a16b3b35ad0e2df, type: 3}
@@ -672,8 +672,65 @@ Transform:
   m_Children:
   - {fileID: 1270159992}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &956400845
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2448818485206115296, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
+      propertyPath: m_Name
+      value: DungeonEnemy1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2448818485206115310, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2448818485206115310, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.072011
+      objectReference: {fileID: 0}
+    - target: {fileID: 2448818485206115310, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.12495291
+      objectReference: {fileID: 0}
+    - target: {fileID: 2448818485206115310, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2448818485206115310, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2448818485206115310, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2448818485206115310, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2448818485206115310, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2448818485206115310, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2448818485206115310, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2448818485206115310, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
 --- !u!224 &1069862103 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4752034922042412729, guid: 0613ff43161702f4089034eaa81c8e55, type: 3}
@@ -1022,7 +1079,7 @@ MonoBehaviour:
   HealthBar: {fileID: 523168866}
   HealthAmount: 100
   damage_amount: 0
-  Heal_amount: 5
+  Heal_amount: 0
 --- !u!4 &1663420755
 Transform:
   m_ObjectHideFlags: 0
@@ -1036,7 +1093,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1693264439 stripped
 RectTransform:
@@ -1139,7 +1196,7 @@ RectTransform:
   - {fileID: 1693264439}
   - {fileID: 523168865}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1318,7 +1375,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2071452359
 PrefabInstance:
