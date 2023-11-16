@@ -106,8 +106,6 @@
       },
       "url": "https://packages.unity.com"
     },
-<<<<<<< HEAD
-=======
     "com.unity.cinemachine": {
       "version": "2.8.9",
       "depth": 0,
@@ -117,7 +115,6 @@
       },
       "url": "https://packages.unity.com"
     },
->>>>>>> 6b2b87fa2784665a08e5f6c66f1239b9f5c98501
     "com.unity.ext.nunit": {
       "version": "1.0.6",
       "depth": 1,
@@ -141,7 +138,7 @@
       }
     },
     "com.unity.ide.rider": {
-      "version": "3.0.26",
+      "version": "3.0.24",
       "depth": 0,
       "source": "registry",
       "dependencies": {
