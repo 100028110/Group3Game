@@ -6,10 +6,12 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     public int movementSpeed;
+
+    public Animator weaponAnim;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -31,6 +33,10 @@ public class Movement : MonoBehaviour
         {
             transform.position += Vector3.down * movementSpeed * Time.deltaTime;
         }
-        
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            weaponAnim.SetTrigger("Attack");
+        }
     }
 }
