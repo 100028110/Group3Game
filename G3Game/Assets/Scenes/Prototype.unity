@@ -1022,7 +1022,7 @@ MonoBehaviour:
   HealthBar: {fileID: 523168866}
   HealthAmount: 100
   damage_amount: 0
-  Heal_amount: 0
+  Heal_amount: 5
 --- !u!4 &1663420755
 Transform:
   m_ObjectHideFlags: 0
