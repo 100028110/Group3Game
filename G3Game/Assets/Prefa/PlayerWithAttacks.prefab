@@ -205,7 +205,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 661f004804d29ed4bb35f743085d8b0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dashSpeed: 50
   movementSpeed: 5
+  dampeningFactor: 0.992
   weaponAnim: {fileID: 7699026010298377590}
 --- !u!50 &8059767971560526057
 Rigidbody2D:
