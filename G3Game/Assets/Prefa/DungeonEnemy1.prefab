@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2448818485206115310}
   - component: {fileID: 2448818485206115311}
   - component: {fileID: 2448818485206115309}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DungeonEnemy1
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
