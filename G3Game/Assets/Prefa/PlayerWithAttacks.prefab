@@ -115,9 +115,9 @@ GameObject:
   - component: {fileID: 3971628547436124041}
   - component: {fileID: 2286344604147851499}
   - component: {fileID: 8059767971560526057}
-  - component: {fileID: 3092739462438019177}
   - component: {fileID: 3774182349416611545}
-  m_Layer: 0
+  - component: {fileID: 643222344}
+  m_Layer: 6
   m_Name: PlayerWithAttacks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -207,7 +207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dashSpeed: 50
   movementSpeed: 5
-  dampeningFactor: 0.992
+  dampeningFactor: 0.99
   weaponAnim: {fileID: 7699026010298377590}
 --- !u!50 &8059767971560526057
 Rigidbody2D:
@@ -230,51 +230,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!60 &3092739462438019177
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6623242012253069812}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.56, y: 2.56}
-    newSize: {x: 2.56, y: 2.56}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.65999997, y: 0.26999998}
-      - {x: 0.58, y: 0.44}
-      - {x: 0.44, y: 0.59999996}
-      - {x: 0.51, y: 0.63}
-      - {x: 0.51, y: 1.05}
-      - {x: 0.44, y: 1.14}
-      - {x: 0.32, y: 1.22}
-      - {x: -0.11, y: 1.22}
-      - {x: -0.17999999, y: 1.16}
-      - {x: -0.28, y: 1.05}
-      - {x: -0.29, y: 0.53999996}
-      - {x: -0.42, y: 0.29}
-      - {x: -0.42, y: -0.35}
-      - {x: -0.35999998, y: -0.42}
-      - {x: -0.26999998, y: -0.44}
-      - {x: -0.26, y: -0.79999995}
-      - {x: -0.25, y: -0.82}
-      - {x: 0.5, y: -0.82}
-      - {x: 0.58, y: -0.42999998}
-      - {x: 0.65999997, y: -0.35}
 --- !u!95 &3774182349416611545
 Animator:
   serializedVersion: 5
@@ -296,6 +251,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!70 &643222344
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6623242012253069812}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.12, y: 0.12}
+  m_Size: {x: 0.6, y: 1.83}
+  m_Direction: 0
 --- !u!1 &7311859845628268043
 GameObject:
   m_ObjectHideFlags: 0
