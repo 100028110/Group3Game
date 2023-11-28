@@ -6,19 +6,23 @@ public class EnemyMovment : MonoBehaviour
 {
     public LayerMask playerLayers;
     public float radius;
-
-    private Transform player;
     private Transform self;
+    private Rigidbody2D rb;
+    private Vector2 Movement;
+    public float moveSpeed;
 
+    private SpriteRenderer sr;
     void Start()
     {
         self = transform;
+        rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         PlayerDetected();
+        MoveCharacter(Movement);
     }
 
     private void PlayerDetected()
@@ -26,9 +30,25 @@ public class EnemyMovment : MonoBehaviour
         RaycastHit2D hit = Physics2D.CircleCast(self.position, radius, Vector2.zero, 0f, playerLayers);
         if (hit)
         {
-            Debug.Log("Detected Player");
-            // Do player following
+            Movement = (hit.transform.position - self.position).normalized;
+            if (Movement.x < 0.01f)
+            {
+                sr.flipX = true;
+            }
+            else
+            {
+                sr.flipX = false;
+            }
         }
+        else
+        {
+            Movement = Vector2.zero;
+        }
+    }
+
+    void MoveCharacter(Vector2 direction1)
+    {
+        rb.MovePosition((Vector2)self.position + (Time.fixedDeltaTime*moveSpeed*direction1));
     }
 
 }

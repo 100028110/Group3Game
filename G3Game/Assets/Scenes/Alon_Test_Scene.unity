@@ -447,6 +447,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 787811294, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
+      propertyPath: radius
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 787811294, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
+      propertyPath: moveSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 787811294, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
+      propertyPath: playerLayers.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 787811295, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
+      propertyPath: m_Mass
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 787811295, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2448818485206115296, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
       propertyPath: m_Name
       value: DungeonEnemy1
@@ -508,7 +528,6 @@ GameObject:
   - component: {fileID: 1593913259}
   - component: {fileID: 1593913258}
   - component: {fileID: 1593913257}
-  - component: {fileID: 1593913260}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -600,18 +619,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1593913260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593913256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ff153e5e0c565c4bb28834054c686ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1644152748 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2976439426005856279, guid: 702a0c83974de3e4baedf45d0342ac9b, type: 3}
