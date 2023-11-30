@@ -348,7 +348,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5381887792147908720, guid: d33204f95616ba64da57d56e8e557bf1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: 
+      value: Dungeon two
       objectReference: {fileID: 0}
     - target: {fileID: 5381887792147908721, guid: d33204f95616ba64da57d56e8e557bf1, type: 3}
       propertyPath: m_Sprite
@@ -593,7 +593,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5381887792147908720, guid: d33204f95616ba64da57d56e8e557bf1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: 
+      value: Dungeon three
       objectReference: {fileID: 0}
     - target: {fileID: 5381887792147908721, guid: d33204f95616ba64da57d56e8e557bf1, type: 3}
       propertyPath: m_Sprite
