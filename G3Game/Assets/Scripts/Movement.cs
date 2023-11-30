@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    public Animator playerDashAnimator;
     public float dashSpeed;
     public float movementSpeed;
     public float dampeningFactor;
@@ -59,12 +60,10 @@ public class Movement : MonoBehaviour
            
             if (Input.GetKey(KeyCode.Space))
             {
-                Debug.Log("Dash");
                 movementSpeed = dashSpeed;
+                playerDashAnimator.SetTrigger("OnDash");
                 yield return new WaitForSeconds(3);
             }
-
-            
         }
     }
 }
