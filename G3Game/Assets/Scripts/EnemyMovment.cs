@@ -8,20 +8,18 @@ public class EnemyMovment : MonoBehaviour
     public float searchRange;
     public float attackRange;
     public float moveSpeed;
-    public GameObject swordCollider;
-    
+
     private Transform self;
     private Rigidbody2D rb;
     private Vector2 Movement;
     private Animator anim;
-    //private SpriteRenderer sr;
+    private SpriteRenderer sr;
     void Start()
     {
         self = transform;
         rb = GetComponent<Rigidbody2D>();
-        //sr = GetComponent<SpriteRenderer>();
+        sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
-        swordCollider.SetActive(false);
     }
 
     void FixedUpdate()
@@ -41,18 +39,17 @@ public class EnemyMovment : MonoBehaviour
             // Flip image to look left or right
             if (Movement.x < 0.01f)
             {
-                self.rotation = Quaternion.Euler(Vector3.up * 180f);
+                sr.flipX = true;
             }
             else
             {
-                self.rotation = Quaternion.identity;
+                sr.flipX = false;
             }
             
             // If distance is close enough, swing
             if (Vector3.Distance(self.position, hit.transform.position) < attackRange)
             {
                 anim.SetTrigger("Attack");
-                swordCollider.SetActive(true);
             }
         }
         else
@@ -64,11 +61,6 @@ public class EnemyMovment : MonoBehaviour
     void MoveCharacter(Vector2 direction1)
     {
         rb.MovePosition((Vector2)self.position + (Time.fixedDeltaTime*moveSpeed*direction1));
-    }
-
-    public void DisableSword()
-    {
-        swordCollider.SetActive(false);
     }
 
 }
