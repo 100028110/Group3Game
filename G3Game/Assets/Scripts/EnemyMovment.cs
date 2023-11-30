@@ -9,6 +9,9 @@ public class EnemyMovment : MonoBehaviour
     public float attackRange;
     public float moveSpeed;
     public GameObject swordCollider;
+    public float damage;
+
+    
     
     private Transform self;
     private Rigidbody2D rb;
@@ -22,6 +25,7 @@ public class EnemyMovment : MonoBehaviour
         //sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         swordCollider.SetActive(false);
+       
     }
 
     void FixedUpdate()
@@ -29,6 +33,19 @@ public class EnemyMovment : MonoBehaviour
         PlayerDetected();
         MoveCharacter(Movement);
     }
+    void OnTriggerEnter2D(Collider2D col) {
+        if ( col.gameObject.layer == 6)
+        {
+            Debug.Log("hit");
+            GameObject.Find("HealthManger").GetComponent<HealthManger>().HealthAmount-=5;
+            
+            
+        }
+        
+    }
+
+ 
+
 
     private void PlayerDetected()
     {
