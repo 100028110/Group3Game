@@ -14,16 +14,19 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Dungeon one.unity
     guid: 942ed3e03266ba74abc19d088c1f6d10
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Dungeon two.unity
     guid: ebbfe48c76e0d224c91de672030b571d
   - enabled: 0
     path: Assets/Scenes/Testing Scene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Prototype.unity
     guid: 522d103c11f827a4ca9ef61fa5a51fa9
   - enabled: 1
     path: Assets/Scenes/LevelSelect.unity
     guid: eae5d9830e6e434489b10a349676c344
+  - enabled: 1
+    path: Assets/Scenes/Dungeon three.unity
+    guid: b63d7f49d813aad4fb7997e085bd91e0
   m_configObjects: {}
