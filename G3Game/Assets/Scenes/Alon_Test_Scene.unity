@@ -456,6 +456,14 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 787811294, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
+      propertyPath: attackRange
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 787811294, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
+      propertyPath: searchRange
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 787811294, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
       propertyPath: playerLayers.m_Bits
       value: 64
       objectReference: {fileID: 0}
