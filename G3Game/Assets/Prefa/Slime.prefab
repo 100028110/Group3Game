@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4377903999499559627}
   - component: {fileID: 5942662102263898092}
   - component: {fileID: 9144651544210774413}
-  - component: {fileID: 1268607521197482225}
+  - component: {fileID: 3268138634445377780}
   m_Layer: 7
   m_Name: Slime
   m_TagString: Untagged
@@ -124,7 +124,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1268607521197482225
+--- !u!114 &3268138634445377780
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,14 +133,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 4877724818102329509}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1391a0beb5d28054c836eafd90a5c59b, type: 3}
+  m_Script: {fileID: 11500000, guid: 1612022b444b5b34b9f0ced6cb9f8563, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerLayers:
     serializedVersion: 2
     m_Bits: 64
-  searchRange: 7
-  attackRange: 3
-  moveSpeed: 3
-  swordCollider: {fileID: 0}
+  searchRange: 10
+  attackRange: 2
+  moveSpeed: 2
+  slimeCollider: {fileID: 4877724818102329509}
   damage: 0
