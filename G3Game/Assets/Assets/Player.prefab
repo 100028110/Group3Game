@@ -208,7 +208,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 661f004804d29ed4bb35f743085d8b0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerDashAnimator: {fileID: 0}
+  dashSpeed: 0
   movementSpeed: 5
+  dampeningFactor: 0
   weaponAnim: {fileID: 1833481587878928005}
 --- !u!50 &2050183276009777946
 Rigidbody2D:
@@ -426,5 +429,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 661f004804d29ed4bb35f743085d8b0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerDashAnimator: {fileID: 0}
+  dashSpeed: 0
   movementSpeed: 5
+  dampeningFactor: 0
   weaponAnim: {fileID: 0}
