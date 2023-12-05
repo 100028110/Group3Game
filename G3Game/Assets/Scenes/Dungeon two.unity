@@ -123,6 +123,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &161225766
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 100966361284208527, guid: 583bfa7f293085440a8223094de405c5, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100966361284208527, guid: 583bfa7f293085440a8223094de405c5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.273346
+      objectReference: {fileID: 0}
+    - target: {fileID: 100966361284208527, guid: 583bfa7f293085440a8223094de405c5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.4224343
+      objectReference: {fileID: 0}
+    - target: {fileID: 100966361284208527, guid: 583bfa7f293085440a8223094de405c5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100966361284208527, guid: 583bfa7f293085440a8223094de405c5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 100966361284208527, guid: 583bfa7f293085440a8223094de405c5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 100966361284208527, guid: 583bfa7f293085440a8223094de405c5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100966361284208527, guid: 583bfa7f293085440a8223094de405c5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100966361284208527, guid: 583bfa7f293085440a8223094de405c5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 100966361284208527, guid: 583bfa7f293085440a8223094de405c5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100966361284208527, guid: 583bfa7f293085440a8223094de405c5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100966361284208562, guid: 583bfa7f293085440a8223094de405c5, type: 3}
+      propertyPath: m_Name
+      value: BloodDeath Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 583bfa7f293085440a8223094de405c5, type: 3}
 --- !u!1 &1054408098 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6623242012253069812, guid: 627b62cc2911c804f9a4f9835fdaab49, type: 3}
@@ -141,6 +198,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effect: {fileID: 5379708649304278032, guid: 82ea50b54588eb1499df392690e2ac73, type: 3}
+--- !u!114 &1054408105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054408098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13ebd8713782a004c882ff626b0c9f3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  effect: {fileID: 100966361284208562, guid: 583bfa7f293085440a8223094de405c5, type: 3}
 --- !u!1 &1220243101
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,6 +375,18 @@ PrefabInstance:
     - target: {fileID: 787811295, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
       propertyPath: m_BodyType
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 787811296, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
+      propertyPath: m_Size.x
+      value: 2.2155256
+      objectReference: {fileID: 0}
+    - target: {fileID: 787811296, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
+      propertyPath: m_Size.y
+      value: 2.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 787811296, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.55343646
       objectReference: {fileID: 0}
     - target: {fileID: 787811296, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
       propertyPath: m_IsTrigger
