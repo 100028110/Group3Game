@@ -1,5 +1,53 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &264088046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 264088047}
+  - component: {fileID: 264088048}
+  m_Layer: 0
+  m_Name: SwordcolPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &264088047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264088046}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1456499636020456309}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &264088048
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264088046}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &1690655351
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,6 +258,8 @@ MonoBehaviour:
   movementSpeed: 5
   dampeningFactor: 0.99
   weaponAnim: {fileID: 7699026010298377590}
+  damagePlayer: 2
+  mySwordCollider: {fileID: 264088046}
 --- !u!50 &8059767971560526057
 Rigidbody2D:
   serializedVersion: 4
@@ -258,6 +308,7 @@ GameObject:
   - component: {fileID: 1456499636020456309}
   - component: {fileID: 5733847982316493691}
   - component: {fileID: 7699026010298377590}
+  - component: {fileID: 74008042}
   m_Layer: 0
   m_Name: Weapon
   m_TagString: Untagged
@@ -276,7 +327,8 @@ Transform:
   m_LocalPosition: {x: 0.9, y: 0.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 264088047}
   m_Father: {fileID: 368848659729014124}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -353,6 +405,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &74008042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7311859845628268043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bd0b9686b565324cb0c79a23c798ae7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swordChild: {fileID: 264088046}
 --- !u!1001 &464606802
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -426,11 +491,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5969017789859603697, guid: 702a0c83974de3e4baedf45d0342ac9b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1133.0336
+      value: -539.0001
       objectReference: {fileID: 0}
     - target: {fileID: 5969017789859603697, guid: 702a0c83974de3e4baedf45d0342ac9b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -56.56668
+      value: 344.00003
       objectReference: {fileID: 0}
     - target: {fileID: 5969017789859603697, guid: 702a0c83974de3e4baedf45d0342ac9b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -528,11 +593,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6096820499057035816, guid: 5caeab8fdb1f0e64f984e81e1100c17a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1133.0334
+      value: -539
       objectReference: {fileID: 0}
     - target: {fileID: 6096820499057035816, guid: 5caeab8fdb1f0e64f984e81e1100c17a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -56.56668
+      value: 344.00003
       objectReference: {fileID: 0}
     - target: {fileID: 6096820499057035816, guid: 5caeab8fdb1f0e64f984e81e1100c17a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -638,11 +703,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4752034922042412729, guid: 0613ff43161702f4089034eaa81c8e55, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1133.0334
+      value: -539
       objectReference: {fileID: 0}
     - target: {fileID: 4752034922042412729, guid: 0613ff43161702f4089034eaa81c8e55, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -56.56668
+      value: 344
       objectReference: {fileID: 0}
     - target: {fileID: 4752034922042412729, guid: 0613ff43161702f4089034eaa81c8e55, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

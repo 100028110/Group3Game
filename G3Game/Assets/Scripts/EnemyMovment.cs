@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,7 @@ public class EnemyMovment : MonoBehaviour
     public float moveSpeed;
     public GameObject swordCollider;
     public float damage;
+    public float health;
 
     
     
@@ -28,6 +30,14 @@ public class EnemyMovment : MonoBehaviour
        
     }
 
+    private void Update()
+    {
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     void FixedUpdate()
     {
         PlayerDetected();
@@ -37,7 +47,7 @@ public class EnemyMovment : MonoBehaviour
         if ( col.gameObject.layer == 6)
         {
             Debug.Log("hit");
-            GameObject.Find("HealthManger").GetComponent<HealthManger>().HealthAmount-=5;
+            GameObject.Find("HealthManger").GetComponent<HealthManger>().HealthAmount-=damage;
             
             
         }

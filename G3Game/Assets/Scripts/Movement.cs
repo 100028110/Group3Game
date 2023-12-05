@@ -12,10 +12,13 @@ public class Movement : MonoBehaviour
     public Animator weaponAnim;
     private Rigidbody2D rb;
     private float ogSpeed;
+    public float damagePlayer;
+    public GameObject mySwordCollider;
     
     // Start is called before the first frame update
     void Start()
     {
+        mySwordCollider.SetActive(false);
         ogSpeed = movementSpeed;
         rb = GetComponent<Rigidbody2D>();
         StartCoroutine("dash_press");
@@ -47,10 +50,24 @@ public class Movement : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             weaponAnim.SetTrigger("Attack");
+            mySwordCollider.SetActive(true);
+            
         }
+        
         
         movementSpeed = ogSpeed + (movementSpeed - ogSpeed) * dampeningFactor;
     }
+    void OnTriggerEnter2D(Collider2D col) {
+        if (col.gameObject.layer == 7)
+        {
+            Debug.Log("hit of player");
+            GameObject.Find(col.gameObject.name).GetComponent<EnemyMovment>().health-=damagePlayer;
+            
+            
+        }
+        
+    }
+    
     
     public IEnumerator dash_press(){
 
@@ -65,5 +82,11 @@ public class Movement : MonoBehaviour
                 yield return new WaitForSeconds(3);
             }
         }
+    }
+
+    public void TurnOffSword()
+    {
+        mySwordCollider.SetActive(false);
+        
     }
 }
