@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5942662102263898092}
   - component: {fileID: 9144651544210774413}
   - component: {fileID: 1268607521197482225}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Slime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,3 +142,5 @@ MonoBehaviour:
   searchRange: 7
   attackRange: 3
   moveSpeed: 3
+  swordCollider: {fileID: 0}
+  damage: 0

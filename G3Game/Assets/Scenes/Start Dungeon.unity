@@ -691,6 +691,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bat (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7932129040785428212, guid: 4a14cc3af2e630246844b544288e4f8e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a14cc3af2e630246844b544288e4f8e, type: 3}
 --- !u!1001 &381493213
@@ -980,11 +984,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5969017789859603697, guid: 702a0c83974de3e4baedf45d0342ac9b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -416.9
+      value: -418.2
       objectReference: {fileID: 0}
     - target: {fileID: 5969017789859603697, guid: 702a0c83974de3e4baedf45d0342ac9b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 346.30002
+      value: 292.99997
       objectReference: {fileID: 0}
     - target: {fileID: 5969017789859603697, guid: 702a0c83974de3e4baedf45d0342ac9b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1643,6 +1647,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 399ac3e1c39995748a16b3b35ad0e2df, type: 3}
+--- !u!4 &1071826448 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2448818485206115310, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
+  m_PrefabInstance: {fileID: 2448818486577493255}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1074241986 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6843933767499568798, guid: 0f68f6870b70b464987737edf036331a, type: 3}
@@ -2433,11 +2442,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6096820499057035816, guid: 5caeab8fdb1f0e64f984e81e1100c17a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -416.9
+      value: -418.2
       objectReference: {fileID: 0}
     - target: {fileID: 6096820499057035816, guid: 5caeab8fdb1f0e64f984e81e1100c17a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 346.3
+      value: 293
       objectReference: {fileID: 0}
     - target: {fileID: 6096820499057035816, guid: 5caeab8fdb1f0e64f984e81e1100c17a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2586,6 +2595,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1762402402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1762402404}
+  - component: {fileID: 1762402403}
+  m_Layer: 7
+  m_Name: Sword
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!70 &1762402403
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762402402}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.5, y: 1}
+  m_Direction: 0
+--- !u!4 &1762402404
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762402402}
+  m_LocalRotation: {x: -0, y: -0, z: 0.36666754, w: 0.93035203}
+  m_LocalPosition: {x: 1.19, y: -0.9, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1071826448}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 43.02}
 --- !u!1001 &1859784720
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2972,11 +3029,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4752034922042412729, guid: 0613ff43161702f4089034eaa81c8e55, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -416.9
+      value: -418.2
       objectReference: {fileID: 0}
     - target: {fileID: 4752034922042412729, guid: 0613ff43161702f4089034eaa81c8e55, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 346.30002
+      value: 292.99997
       objectReference: {fileID: 0}
     - target: {fileID: 4752034922042412729, guid: 0613ff43161702f4089034eaa81c8e55, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3243,6 +3300,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 787811294, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
+      propertyPath: damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 787811294, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
+      propertyPath: swordCollider
+      value: 
+      objectReference: {fileID: 1762402402}
     - target: {fileID: 2448818485206115296, guid: 91ca83bb5771ad6438b3709b6f9d2d4e, type: 3}
       propertyPath: m_Name
       value: DungeonEnemy1
@@ -3478,6 +3543,10 @@ PrefabInstance:
     - target: {fileID: 7932129040785428212, guid: 4a14cc3af2e630246844b544288e4f8e, type: 3}
       propertyPath: m_Name
       value: Bat
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932129040785428212, guid: 4a14cc3af2e630246844b544288e4f8e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a14cc3af2e630246844b544288e4f8e, type: 3}

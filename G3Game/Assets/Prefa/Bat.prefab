@@ -139,6 +139,8 @@ MonoBehaviour:
   playerLayers:
     serializedVersion: 2
     m_Bits: 64
-  searchRange: 15
+  searchRange: 12
   attackRange: 1
   moveSpeed: 4
+  swordCollider: {fileID: 0}
+  damage: 0
