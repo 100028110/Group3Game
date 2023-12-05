@@ -45,8 +45,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.29}
-  m_Size: {x: 0.6, y: 1}
+  m_Offset: {x: 0, y: 1.9}
+  m_Size: {x: 0.6, y: 2}
   m_Direction: 0
 --- !u!1 &8170158520566948472
 GameObject:
@@ -190,10 +190,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   searchRange: 10
-  attackRange: 2
+  attackRange: 4
   moveSpeed: 2
   swordCollider: {fileID: 5807893728638716477}
-  damage: 0
+  damage: 10
 --- !u!95 &1815721502296301505
 Animator:
   serializedVersion: 5

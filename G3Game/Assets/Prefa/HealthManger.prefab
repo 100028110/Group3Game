@@ -46,5 +46,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HealthBar: {fileID: 0}
   HealthAmount: 100
-  damage_amount: 20
+  damage_amount: 0
   Heal_amount: 5
