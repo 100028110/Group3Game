@@ -58,10 +58,10 @@ public class Movement : MonoBehaviour
         movementSpeed = ogSpeed + (movementSpeed - ogSpeed) * dampeningFactor;
     }
     void OnTriggerEnter2D(Collider2D col) {
-        if (col.gameObject.layer == 7)
+        if (col.gameObject.CompareTag("Enemy1"))
         {
             Debug.Log("hit of player");
-            GameObject.Find(col.gameObject.name).GetComponent<EnemyMovment>().health-=damagePlayer;
+            col.gameObject.GetComponent<EnemyMovment>().health-=damagePlayer;
             
             
         }
