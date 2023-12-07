@@ -1610,7 +1610,7 @@ MonoBehaviour:
   searchRange: 10
   attackRange: 2
   moveSpeed: 2
-  swordCollider: {fileID: 1037505214}
+  swordCollider: {fileID: 1861525202}
   damage: 7
   health: 10
 --- !u!1 &700577507
@@ -2997,6 +2997,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 399ac3e1c39995748a16b3b35ad0e2df, type: 3}
+--- !u!1 &1861525202 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8626347895446481190, guid: 759f80d1f6310fb45a92e17134e13612, type: 3}
+  m_PrefabInstance: {fileID: 503153793}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1918452924
 PrefabInstance:
   m_ObjectHideFlags: 0
