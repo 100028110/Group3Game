@@ -194,6 +194,7 @@ MonoBehaviour:
   moveSpeed: 2
   swordCollider: {fileID: 5807893728638716477}
   damage: 10
+  health: 15
 --- !u!95 &1815721502296301505
 Animator:
   serializedVersion: 5
