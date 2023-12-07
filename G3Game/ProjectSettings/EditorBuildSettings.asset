@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Dungeon 2.unity
     guid: b83ede27153cf254482346444d515eaa
+  - enabled: 1
+    path: Assets/Scenes/Death.unity
+    guid: 0d394f06b73347146a8401a9172e6a24
   m_configObjects: {}
