@@ -201,7 +201,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8577674662735535048, guid: 7ca63b4d812939845acfcec0a46c54ad, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 25
+=======
+      value: 21
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 8577674662735535048, guid: 7ca63b4d812939845acfcec0a46c54ad, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1102,7 +1106,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8577674662735535048, guid: 7ca63b4d812939845acfcec0a46c54ad, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 33
+=======
+      value: 29
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 8577674662735535048, guid: 7ca63b4d812939845acfcec0a46c54ad, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2389,7 +2397,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1308950276304472787, guid: 42d1991681b445e4f913abd7968acfaf, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 20
+=======
+      value: 17
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 1308950276304472787, guid: 42d1991681b445e4f913abd7968acfaf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2519,7 +2531,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8577674662735535048, guid: 7ca63b4d812939845acfcec0a46c54ad, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 21
+=======
+      value: 18
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 8577674662735535048, guid: 7ca63b4d812939845acfcec0a46c54ad, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3393,7 +3409,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7212820405575297410, guid: 7f9cc49f05ad4fd42b7e8ad876ecdb0d, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 23
+=======
+      value: 20
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 7212820405575297410, guid: 7f9cc49f05ad4fd42b7e8ad876ecdb0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4020,6 +4040,30 @@ PrefabInstance:
     - target: {fileID: 368848659729014124, guid: 627b62cc2911c804f9a4f9835fdaab49, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752034923581254067, guid: 627b62cc2911c804f9a4f9835fdaab49, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -365
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752034923581254067, guid: 627b62cc2911c804f9a4f9835fdaab49, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5969017789432787619, guid: 627b62cc2911c804f9a4f9835fdaab49, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -365.00012
+      objectReference: {fileID: 0}
+    - target: {fileID: 5969017789432787619, guid: 627b62cc2911c804f9a4f9835fdaab49, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 295.00003
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096820500738768535, guid: 627b62cc2911c804f9a4f9835fdaab49, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -365
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096820500738768535, guid: 627b62cc2911c804f9a4f9835fdaab49, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 295.00003
       objectReference: {fileID: 0}
     - target: {fileID: 6623242012253069812, guid: 627b62cc2911c804f9a4f9835fdaab49, type: 3}
       propertyPath: m_Name
@@ -4648,7 +4692,7 @@ PrefabInstance:
       objectReference: {fileID: 472740482}
     - target: {fileID: 2034497969656719787, guid: 53bc1230189e58c4f98ab0d2ddf58770, type: 3}
       propertyPath: _collisionEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2034497969656719787, guid: 53bc1230189e58c4f98ab0d2ddf58770, type: 3}
       propertyPath: _collisionEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -4667,11 +4711,23 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2034497969656719787, guid: 53bc1230189e58c4f98ab0d2ddf58770, type: 3}
+      propertyPath: _collisionEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034497969656719787, guid: 53bc1230189e58c4f98ab0d2ddf58770, type: 3}
       propertyPath: _collisionExit.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Door, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2034497969656719787, guid: 53bc1230189e58c4f98ab0d2ddf58770, type: 3}
+      propertyPath: _collisionEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034497969656719787, guid: 53bc1230189e58c4f98ab0d2ddf58770, type: 3}
       propertyPath: _collisionExit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034497969656719787, guid: 53bc1230189e58c4f98ab0d2ddf58770, type: 3}
+      propertyPath: _collisionEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6845943066036072369, guid: 53bc1230189e58c4f98ab0d2ddf58770, type: 3}
