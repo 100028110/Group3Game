@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class HealthManger : MonoBehaviour
 {
 	public Image HealthBar;
@@ -22,6 +22,11 @@ public class HealthManger : MonoBehaviour
     {
 		if(HealthAmount < lastHealth){
 			takeDamage(damage_amount);
+		}
+
+		if (HealthAmount <= 0)
+		{
+			SceneManager.LoadScene("Death");
 		}
     }
 
