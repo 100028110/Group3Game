@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Dungeon one.unity
     guid: 942ed3e03266ba74abc19d088c1f6d10
   - enabled: 0
-    path: Assets/Scenes/Dungeon two.unity
+    path: Assets/Scenes/Dungeon two(Test).unity
     guid: ebbfe48c76e0d224c91de672030b571d
   - enabled: 0
     path: Assets/Scenes/Testing Scene.unity
