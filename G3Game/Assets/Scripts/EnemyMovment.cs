@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class EnemyMovment : MonoBehaviour
 {
     public LayerMask playerLayers;
@@ -19,6 +19,7 @@ public class EnemyMovment : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 Movement;
     private Animator anim;
+    
     //private SpriteRenderer sr;
     void Start()
     {
@@ -35,7 +36,14 @@ public class EnemyMovment : MonoBehaviour
     {
         if (health <= 0)
         {
+            int gos = GameObject.FindGameObjectsWithTag("Enemy1").Length;
+            if(gos <=1)
+            {
+                SceneManager.LoadScene("LevelSelect");
+                
+            }
             Destroy(gameObject);
+            
         }
     }
 
