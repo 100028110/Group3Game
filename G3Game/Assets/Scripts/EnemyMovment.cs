@@ -26,6 +26,7 @@ public class EnemyMovment : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         //sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        Debug.Log(gameObject.name + " has " + swordCollider.name);
         swordCollider.SetActive(false);
        
     }
