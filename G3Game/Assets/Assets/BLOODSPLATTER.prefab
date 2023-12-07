@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5379708649304278061}
   - component: {fileID: 5379708649304278062}
   - component: {fileID: 5379708649304278063}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BLOODSPLATTER
   m_TagString: Untagged
   m_Icon: {fileID: 0}
