@@ -20,6 +20,7 @@ public class EnemyMovment : MonoBehaviour
     private Vector2 Movement;
     private Animator anim;
     
+    
     //private SpriteRenderer sr;
     void Start()
     {
