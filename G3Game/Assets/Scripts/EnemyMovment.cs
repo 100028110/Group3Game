@@ -40,7 +40,7 @@ public class EnemyMovment : MonoBehaviour
             int gos = GameObject.FindGameObjectsWithTag("Enemy1").Length;
             if(gos <=1)
             {
-                SceneManager.LoadScene("LevelSelect");
+                SceneManager.LoadScene("You Win");
                 
             }
             Destroy(gameObject);
