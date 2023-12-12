@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -55,18 +56,21 @@ public class Movement : MonoBehaviour
         }
         
         
+        
+    }
+
+    private void FixedUpdate()
+    {
         movementSpeed = ogSpeed + (movementSpeed - ogSpeed) * dampeningFactor;
     }
+
     void OnTriggerEnter2D(Collider2D col) {
         //Debug.Log("Hit something");
         if (col.gameObject.CompareTag("Enemy1"))
         {
             //Debug.Log("hit of player");
-            col.gameObject.GetComponent<EnemyMovment>().health-=damagePlayer;
-            
-            
+            col.gameObject.GetComponent<EnemyMovment>().health -= damagePlayer;
         }
-        
     }
     
     
