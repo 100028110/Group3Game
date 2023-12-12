@@ -2314,7 +2314,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 464984a556b2b1c44b5090da740d8ccc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effect: {fileID: 5379708649304278032, guid: 82ea50b54588eb1499df392690e2ac73, type: 3}
 --- !u!1001 &963270533
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3977,6 +3976,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1690655354, guid: 627b62cc2911c804f9a4f9835fdaab49, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 368848659729014124, guid: 627b62cc2911c804f9a4f9835fdaab49, type: 3}
       propertyPath: m_RootOrder
       value: 33
@@ -4023,27 +4026,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4752034923581254067, guid: 627b62cc2911c804f9a4f9835fdaab49, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -316.99988
+      value: -203
       objectReference: {fileID: 0}
     - target: {fileID: 4752034923581254067, guid: 627b62cc2911c804f9a4f9835fdaab49, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 253.99994
+      value: 205
       objectReference: {fileID: 0}
     - target: {fileID: 5969017789432787619, guid: 627b62cc2911c804f9a4f9835fdaab49, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -317
+      value: -203.00009
       objectReference: {fileID: 0}
     - target: {fileID: 5969017789432787619, guid: 627b62cc2911c804f9a4f9835fdaab49, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 254
+      value: 205.00006
       objectReference: {fileID: 0}
     - target: {fileID: 6096820500738768535, guid: 627b62cc2911c804f9a4f9835fdaab49, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -316.99988
+      value: -202.99997
       objectReference: {fileID: 0}
     - target: {fileID: 6096820500738768535, guid: 627b62cc2911c804f9a4f9835fdaab49, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 253.99997
+      value: 205.00003
       objectReference: {fileID: 0}
     - target: {fileID: 6623242012253069812, guid: 627b62cc2911c804f9a4f9835fdaab49, type: 3}
       propertyPath: m_Name
