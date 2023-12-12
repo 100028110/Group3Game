@@ -32,10 +32,12 @@ public class Movement : MonoBehaviour
         float moveY = 0;
         if (Input.GetKey("a"))
         {
+            transform.rotation = Quaternion.Euler(Vector3.up * 180f);
             moveX--;
         }
         if (Input.GetKey("d"))
         {
+            transform.rotation = Quaternion.identity;
             moveX++;
         }
         if (Input.GetKey("w"))
