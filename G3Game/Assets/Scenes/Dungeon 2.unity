@@ -773,8 +773,12 @@ PrefabInstance:
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8577674662735535048, guid: 7ca63b4d812939845acfcec0a46c54ad, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.29372
+      objectReference: {fileID: 0}
+    - target: {fileID: 8577674662735535048, guid: 7ca63b4d812939845acfcec0a46c54ad, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.391155
+      value: 12.3191
       objectReference: {fileID: 0}
     - target: {fileID: 8577674662735535048, guid: 7ca63b4d812939845acfcec0a46c54ad, type: 3}
       propertyPath: m_LocalPosition.y
@@ -886,6 +890,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 395646760872851550, guid: 7f9cc49f05ad4fd42b7e8ad876ecdb0d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2753541090861583548, guid: 7f9cc49f05ad4fd42b7e8ad876ecdb0d, type: 3}
       propertyPath: m_Name
       value: Hallway Connector (6)
@@ -965,7 +973,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8577674662735535048, guid: 7ca63b4d812939845acfcec0a46c54ad, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.88
+      value: -6.86
       objectReference: {fileID: 0}
     - target: {fileID: 8577674662735535048, guid: 7ca63b4d812939845acfcec0a46c54ad, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1010,7 +1018,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1705350493662015634, guid: 7ca63b4d812939845acfcec0a46c54ad, type: 3}
       propertyPath: m_SortingOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4842071140047592000, guid: 7ca63b4d812939845acfcec0a46c54ad, type: 3}
       propertyPath: m_Name
@@ -1022,7 +1030,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8577674662735535048, guid: 7ca63b4d812939845acfcec0a46c54ad, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.362395
+      value: 3.390639
       objectReference: {fileID: 0}
     - target: {fileID: 8577674662735535048, guid: 7ca63b4d812939845acfcec0a46c54ad, type: 3}
       propertyPath: m_LocalScale.y
@@ -1030,11 +1038,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8577674662735535048, guid: 7ca63b4d812939845acfcec0a46c54ad, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 25.736
+      value: 25.74
       objectReference: {fileID: 0}
     - target: {fileID: 8577674662735535048, guid: 7ca63b4d812939845acfcec0a46c54ad, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.258
+      value: -0.23
       objectReference: {fileID: 0}
     - target: {fileID: 8577674662735535048, guid: 7ca63b4d812939845acfcec0a46c54ad, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1265,6 +1273,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 395646760872851550, guid: 7f9cc49f05ad4fd42b7e8ad876ecdb0d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2753541090861583548, guid: 7f9cc49f05ad4fd42b7e8ad876ecdb0d, type: 3}
       propertyPath: m_Name
       value: Hallway Connector (5)
@@ -1275,11 +1287,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7212820405575297410, guid: 7f9cc49f05ad4fd42b7e8ad876ecdb0d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.05156
+      value: 19.22
       objectReference: {fileID: 0}
     - target: {fileID: 7212820405575297410, guid: 7f9cc49f05ad4fd42b7e8ad876ecdb0d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.26887512
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 7212820405575297410, guid: 7f9cc49f05ad4fd42b7e8ad876ecdb0d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1287,11 +1299,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7212820405575297410, guid: 7f9cc49f05ad4fd42b7e8ad876ecdb0d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.7071068
+      value: 0.7068904
       objectReference: {fileID: 0}
     - target: {fileID: 7212820405575297410, guid: 7f9cc49f05ad4fd42b7e8ad876ecdb0d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7212820405575297410, guid: 7f9cc49f05ad4fd42b7e8ad876ecdb0d, type: 3}
       propertyPath: m_LocalRotation.y
@@ -1299,7 +1311,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7212820405575297410, guid: 7f9cc49f05ad4fd42b7e8ad876ecdb0d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.7071068
+      value: -0.70732313
       objectReference: {fileID: 0}
     - target: {fileID: 7212820405575297410, guid: 7f9cc49f05ad4fd42b7e8ad876ecdb0d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1311,7 +1323,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7212820405575297410, guid: 7f9cc49f05ad4fd42b7e8ad876ecdb0d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 270
+      value: -90.035
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f9cc49f05ad4fd42b7e8ad876ecdb0d, type: 3}
@@ -1322,6 +1334,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 395646760872851550, guid: 7f9cc49f05ad4fd42b7e8ad876ecdb0d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2753541090861583548, guid: 7f9cc49f05ad4fd42b7e8ad876ecdb0d, type: 3}
       propertyPath: m_Name
       value: Hallway Connector (10)
@@ -2445,27 +2461,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4752034923581254067, guid: 627b62cc2911c804f9a4f9835fdaab49, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -457
+      value: -201
       objectReference: {fileID: 0}
     - target: {fileID: 4752034923581254067, guid: 627b62cc2911c804f9a4f9835fdaab49, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 345
+      value: 201
+      objectReference: {fileID: 0}
+    - target: {fileID: 5733847982316493691, guid: 627b62cc2911c804f9a4f9835fdaab49, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5969017789432787619, guid: 627b62cc2911c804f9a4f9835fdaab49, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -457.00012
+      value: -201.00015
       objectReference: {fileID: 0}
     - target: {fileID: 5969017789432787619, guid: 627b62cc2911c804f9a4f9835fdaab49, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 345.00003
+      value: 202
       objectReference: {fileID: 0}
     - target: {fileID: 6096820500738768535, guid: 627b62cc2911c804f9a4f9835fdaab49, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -457
+      value: -201.00003
       objectReference: {fileID: 0}
     - target: {fileID: 6096820500738768535, guid: 627b62cc2911c804f9a4f9835fdaab49, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 345.00003
+      value: 202
       objectReference: {fileID: 0}
     - target: {fileID: 6623242012253069812, guid: 627b62cc2911c804f9a4f9835fdaab49, type: 3}
       propertyPath: m_Name
