@@ -15,14 +15,20 @@ public class Movement : MonoBehaviour
     private float ogSpeed;
     public float damagePlayer;
     public GameObject mySwordCollider;
+    private Collider2D obg;
     
     // Start is called before the first frame update
     void Start()
     {
+        obg = null;
         mySwordCollider.SetActive(false);
         ogSpeed = movementSpeed;
         rb = GetComponent<Rigidbody2D>();
         StartCoroutine("dash_press");
+        StartCoroutine(normal_enemy(obg));
+      
+
+      
     }
 
     // Update is called once per frame
@@ -63,7 +69,26 @@ public class Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
+       
+        
+
         movementSpeed = ogSpeed + (movementSpeed - ogSpeed) * dampeningFactor;
+    }
+
+    public IEnumerator normal_enemy(Collider2D col)
+    {
+        while (true)
+        {
+            if (col != null)
+            {
+                obg.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+                yield return new WaitForSeconds(5);
+
+
+            }
+            
+        }
+        
     }
 
     void OnTriggerEnter2D(Collider2D col) {
@@ -72,7 +97,23 @@ public class Movement : MonoBehaviour
         {
             //Debug.Log("hit of player");
             col.gameObject.GetComponent<EnemyMovment>().health -= damagePlayer;
+            StartCoroutine(red_damage(col));
+            obg = col;
+
+
+
+
         }
+      
+    }
+
+    public IEnumerator red_damage(Collider2D col)
+    {
+        
+        Debug.Log("turn red");
+        
+        col.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+        yield return new WaitForSeconds(5);
     }
     
     
