@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5381887792147908722}
   - component: {fileID: 5381887792147908721}
   - component: {fileID: 5381887792147908720}
-  - component: {fileID: 5381887792147908727}
+  - component: {fileID: 864435638720441225}
   m_Layer: 5
   m_Name: Levels
   m_TagString: Untagged
@@ -123,9 +123,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5381887792147908727}
-        m_TargetAssemblyTypeName: Button, Assembly-CSharp
-        m_MethodName: loadLevel
+      - m_Target: {fileID: 864435638720441225}
+        m_TargetAssemblyTypeName: Lock, Assembly-CSharp
+        m_MethodName: OnClickCheck
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -135,7 +135,7 @@ MonoBehaviour:
           m_StringArgument: Start Dungeon
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &5381887792147908727
+--- !u!114 &864435638720441225
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5381887792147908725}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fee0c93dfd760d445b7c7538ea0fb77e, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f574d5f6d5a5e64f980041381df7892, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &5381887792629263522
