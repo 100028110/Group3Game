@@ -25,7 +25,7 @@ public class Movement : MonoBehaviour
         ogSpeed = movementSpeed;
         rb = GetComponent<Rigidbody2D>();
         StartCoroutine("dash_press");
-        StartCoroutine(normal_enemy(obg));
+        
       
 
       
@@ -70,26 +70,11 @@ public class Movement : MonoBehaviour
     private void FixedUpdate()
     {
        
-        
 
         movementSpeed = ogSpeed + (movementSpeed - ogSpeed) * dampeningFactor;
     }
 
-    public IEnumerator normal_enemy(Collider2D col)
-    {
-        while (true)
-        {
-            if (col != null)
-            {
-                obg.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
-                yield return new WaitForSeconds(5);
-
-
-            }
-            
-        }
-        
-    }
+ 
 
     void OnTriggerEnter2D(Collider2D col) {
         //Debug.Log("Hit something");
@@ -97,7 +82,7 @@ public class Movement : MonoBehaviour
         {
             //Debug.Log("hit of player");
             col.gameObject.GetComponent<EnemyMovment>().health -= damagePlayer;
-            StartCoroutine(red_damage(col));
+            col.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
             obg = col;
 
 
@@ -107,15 +92,7 @@ public class Movement : MonoBehaviour
       
     }
 
-    public IEnumerator red_damage(Collider2D col)
-    {
-        
-        Debug.Log("turn red");
-        
-        col.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
-        yield return new WaitForSeconds(5);
-    }
-    
+ 
     
     public IEnumerator dash_press(){
 
@@ -128,6 +105,13 @@ public class Movement : MonoBehaviour
                 movementSpeed = dashSpeed;
                 playerDashAnimator.SetTrigger("OnDash");
                 yield return new WaitForSeconds(3);
+            }
+            if (obg != null)
+            {
+                obg.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+                obg = null;
+                yield return new WaitForSeconds(1);
+                
             }
         }
     }
