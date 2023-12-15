@@ -254,7 +254,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1414322036224503708, guid: 15204801738463e4a880acd536f35d1e, type: 3}
       propertyPath: m_RootOrder
-      value: 62
+      value: 61
       objectReference: {fileID: 0}
     - target: {fileID: 1414322036224503708, guid: 15204801738463e4a880acd536f35d1e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -760,8 +760,8 @@ GameObject:
   - component: {fileID: 241561480}
   - component: {fileID: 241561479}
   - component: {fileID: 241561482}
-  - component: {fileID: 241561481}
   - component: {fileID: 241561483}
+  - component: {fileID: 241561484}
   m_Layer: 0
   m_Name: 'Door 4-3 '
   m_TagString: Untagged
@@ -836,18 +836,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 64
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!114 &241561481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 241561478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f289bc84fa24634993db8cb6a3b153d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &241561482
 Animator:
   serializedVersion: 5
@@ -895,6 +883,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 1.28}
   m_EdgeRadius: 0
+--- !u!114 &241561484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241561478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f289bc84fa24634993db8cb6a3b153d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &242001701
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1472,7 +1472,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 61
+  m_RootOrder: 62
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &472740482
 MonoBehaviour:
@@ -2260,23 +2260,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49d9c43d4ce700241a144817cea3e1b2, type: 3}
---- !u!1 &931125656 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6623242012253069812, guid: 627b62cc2911c804f9a4f9835fdaab49, type: 3}
-  m_PrefabInstance: {fileID: 1780638621}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &931125657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 931125656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 464984a556b2b1c44b5090da740d8ccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &963270533
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4213,7 +4196,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 241561481}
+      - m_Target: {fileID: 241561484}
         m_TargetAssemblyTypeName: Door, Assembly-CSharp
         m_MethodName: Open
         m_Mode: 1
