@@ -818,6 +818,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ca63b4d812939845acfcec0a46c54ad, type: 3}
+--- !u!4 &423025111 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 368848659729014124, guid: 627b62cc2911c804f9a4f9835fdaab49, type: 3}
+  m_PrefabInstance: {fileID: 1716397141}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &467799049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2642,7 +2647,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2286344604147851499, guid: 627b62cc2911c804f9a4f9835fdaab49, type: 3}
       propertyPath: dampeningFactor
-      value: 0.97
+      value: 0.93
       objectReference: {fileID: 0}
     - target: {fileID: 4752034923581254067, guid: 627b62cc2911c804f9a4f9835fdaab49, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -3093,7 +3098,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
+  m_Follow: {fileID: 423025111}
   m_Lens:
     FieldOfView: 40
     OrthographicSize: 5
