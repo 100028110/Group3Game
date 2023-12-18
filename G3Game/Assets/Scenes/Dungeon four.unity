@@ -378,6 +378,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5807893728927271494, guid: 49d9c43d4ce700241a144817cea3e1b2, type: 3}
+      propertyPath: nextScene
+      value: Dungeon five
+      objectReference: {fileID: 0}
     - target: {fileID: 8170158520566948470, guid: 49d9c43d4ce700241a144817cea3e1b2, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -2283,6 +2287,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5807893728927271494, guid: 49d9c43d4ce700241a144817cea3e1b2, type: 3}
+      propertyPath: nextScene
+      value: Dungeon five
+      objectReference: {fileID: 0}
     - target: {fileID: 8170158520566948470, guid: 49d9c43d4ce700241a144817cea3e1b2, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -4082,6 +4090,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5807893728927271494, guid: 49d9c43d4ce700241a144817cea3e1b2, type: 3}
+      propertyPath: nextScene
+      value: Dungeon five
+      objectReference: {fileID: 0}
     - target: {fileID: 8170158520566948470, guid: 49d9c43d4ce700241a144817cea3e1b2, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -4645,12 +4657,20 @@ PrefabInstance:
       value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 8577674662735535048, guid: 7ca63b4d812939845acfcec0a46c54ad, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.350001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8577674662735535048, guid: 7ca63b4d812939845acfcec0a46c54ad, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.3500006
+      objectReference: {fileID: 0}
+    - target: {fileID: 8577674662735535048, guid: 7ca63b4d812939845acfcec0a46c54ad, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.7
       objectReference: {fileID: 0}
     - target: {fileID: 8577674662735535048, guid: 7ca63b4d812939845acfcec0a46c54ad, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 34.49
+      value: 34.489998
       objectReference: {fileID: 0}
     - target: {fileID: 8577674662735535048, guid: 7ca63b4d812939845acfcec0a46c54ad, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4662,7 +4682,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8577674662735535048, guid: 7ca63b4d812939845acfcec0a46c54ad, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8577674662735535048, guid: 7ca63b4d812939845acfcec0a46c54ad, type: 3}
       propertyPath: m_LocalRotation.y
@@ -4891,6 +4911,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5807893728927271494, guid: 49d9c43d4ce700241a144817cea3e1b2, type: 3}
+      propertyPath: nextScene
+      value: Dungeon five
+      objectReference: {fileID: 0}
     - target: {fileID: 8170158520566948470, guid: 49d9c43d4ce700241a144817cea3e1b2, type: 3}
       propertyPath: m_RootOrder
       value: 1
