@@ -41,4 +41,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/You Win.unity
     guid: b62456f1a7d01674a8461b21675ebdb9
+  - enabled: 1
+    path: Assets/Scenes/Dungeon Six.unity
+    guid: 9fda43197e333d743a1e27c7d201f4b9
+  - enabled: 1
+    path: Assets/Scenes/Dungeon five.unity
+    guid: 9e81b85d5a2fa0e4f9856e14b9100a58
   m_configObjects: {}
