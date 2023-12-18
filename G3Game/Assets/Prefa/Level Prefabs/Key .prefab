@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1513c333b68846540a2572d6a1cf1404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _colliderScript: 
+  _colliderScript: Movement
   _collisionEntered:
     m_PersistentCalls:
       m_Calls: []
