@@ -16,6 +16,7 @@ public class Movement : MonoBehaviour
     public float damagePlayer;
     public GameObject mySwordCollider;
     private Collider2D obg;
+  
     
     // Start is called before the first frame update
     void Start()
