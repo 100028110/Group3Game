@@ -12,6 +12,7 @@ public class EnemyMovment : MonoBehaviour
     public GameObject swordCollider;
     public float damage;
     public float health;
+    public String nextScene;
 
     
     
@@ -40,6 +41,7 @@ public class EnemyMovment : MonoBehaviour
             int gos = GameObject.FindGameObjectsWithTag("Enemy1").Length;
             if(gos <=1)
             {
+                PlayerPrefs.SetInt(nextScene,1);
                 SceneManager.LoadScene("You Win");
                 
             }
