@@ -15,6 +15,9 @@ public class powerAffect : MonoBehaviour
             
            
             GameObject.Find(col.gameObject.name).GetComponent<Movement>().damagePlayer+=2;
+            GameObject.Find(col.gameObject.name).GetComponent<SpriteRenderer>().color=Color.cyan;
+
+           
             Destroy(gameObject);
             
             
