@@ -560,6 +560,8 @@ MonoBehaviour:
   - Dungeon four
   - Dungeon five
   - Dungeon Six
+  - Dungeon Seven
+  - Dungeon eight
 --- !u!4 &1068676199
 Transform:
   m_ObjectHideFlags: 0
