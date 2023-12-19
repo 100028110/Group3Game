@@ -1575,7 +1575,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 3dac6dbf398b7a74c994ef42679fd34a, type: 3}
     - target: {fileID: 5381887792147908725, guid: d33204f95616ba64da57d56e8e557bf1, type: 3}
       propertyPath: m_Name
-      value: Dungeon five (1)
+      value: Dungeon eight
       objectReference: {fileID: 0}
     - target: {fileID: 5381887792147908726, guid: d33204f95616ba64da57d56e8e557bf1, type: 3}
       propertyPath: m_Pivot.x
