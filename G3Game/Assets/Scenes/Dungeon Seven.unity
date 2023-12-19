@@ -2386,6 +2386,67 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d68b57fbe77734429cf168fe02f075d, type: 3}
+--- !u!1001 &1112410559
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1414322036224503708, guid: 15204801738463e4a880acd536f35d1e, type: 3}
+      propertyPath: m_RootOrder
+      value: 59
+      objectReference: {fileID: 0}
+    - target: {fileID: 1414322036224503708, guid: 15204801738463e4a880acd536f35d1e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 99.35341
+      objectReference: {fileID: 0}
+    - target: {fileID: 1414322036224503708, guid: 15204801738463e4a880acd536f35d1e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 632.4502
+      objectReference: {fileID: 0}
+    - target: {fileID: 1414322036224503708, guid: 15204801738463e4a880acd536f35d1e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.9045362
+      objectReference: {fileID: 0}
+    - target: {fileID: 1414322036224503708, guid: 15204801738463e4a880acd536f35d1e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1414322036224503708, guid: 15204801738463e4a880acd536f35d1e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1414322036224503708, guid: 15204801738463e4a880acd536f35d1e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1414322036224503708, guid: 15204801738463e4a880acd536f35d1e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1414322036224503708, guid: 15204801738463e4a880acd536f35d1e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1414322036224503708, guid: 15204801738463e4a880acd536f35d1e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1414322036224503708, guid: 15204801738463e4a880acd536f35d1e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1414322036224503710, guid: 15204801738463e4a880acd536f35d1e, type: 3}
+      propertyPath: m_Name
+      value: HealthManger
+      objectReference: {fileID: 0}
+    - target: {fileID: 1414322036224503711, guid: 15204801738463e4a880acd536f35d1e, type: 3}
+      propertyPath: HealthBar
+      value: 
+      objectReference: {fileID: 2976439426005856279, guid: 702a0c83974de3e4baedf45d0342ac9b, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 15204801738463e4a880acd536f35d1e, type: 3}
 --- !u!1001 &1196012740
 PrefabInstance:
   m_ObjectHideFlags: 0
