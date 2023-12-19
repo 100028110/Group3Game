@@ -1521,6 +1521,17 @@ MonoBehaviour:
   m_MaximumFOV: 60
   m_MinimumOrthoSize: 1
   m_MaximumOrthoSize: 5000
+--- !u!114 &797829477 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6843933767499568798, guid: 0f68f6870b70b464987737edf036331a, type: 3}
+  m_PrefabInstance: {fileID: 1065071308}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f289bc84fa24634993db8cb6a3b153d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &826753065
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2085,6 +2096,58 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2034497969656719787, guid: 53bc1230189e58c4f98ab0d2ddf58770, type: 3}
+      propertyPath: _collisionEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034497969656719787, guid: 53bc1230189e58c4f98ab0d2ddf58770, type: 3}
+      propertyPath: _collisionEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034497969656719787, guid: 53bc1230189e58c4f98ab0d2ddf58770, type: 3}
+      propertyPath: _collisionEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034497969656719787, guid: 53bc1230189e58c4f98ab0d2ddf58770, type: 3}
+      propertyPath: _collisionEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1844240405}
+    - target: {fileID: 2034497969656719787, guid: 53bc1230189e58c4f98ab0d2ddf58770, type: 3}
+      propertyPath: _collisionEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 797829477}
+    - target: {fileID: 2034497969656719787, guid: 53bc1230189e58c4f98ab0d2ddf58770, type: 3}
+      propertyPath: _collisionEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034497969656719787, guid: 53bc1230189e58c4f98ab0d2ddf58770, type: 3}
+      propertyPath: _collisionEntered.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034497969656719787, guid: 53bc1230189e58c4f98ab0d2ddf58770, type: 3}
+      propertyPath: _collisionEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034497969656719787, guid: 53bc1230189e58c4f98ab0d2ddf58770, type: 3}
+      propertyPath: _collisionEntered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Open
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034497969656719787, guid: 53bc1230189e58c4f98ab0d2ddf58770, type: 3}
+      propertyPath: _collisionEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034497969656719787, guid: 53bc1230189e58c4f98ab0d2ddf58770, type: 3}
+      propertyPath: _collisionEntered.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Door, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034497969656719787, guid: 53bc1230189e58c4f98ab0d2ddf58770, type: 3}
+      propertyPath: _collisionEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034497969656719787, guid: 53bc1230189e58c4f98ab0d2ddf58770, type: 3}
+      propertyPath: _collisionEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6845943066036072369, guid: 53bc1230189e58c4f98ab0d2ddf58770, type: 3}
       propertyPath: m_Name
       value: Key 7-2
@@ -2260,6 +2323,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door 7-2
       objectReference: {fileID: 0}
+    - target: {fileID: 6843933767499568866, guid: 0f68f6870b70b464987737edf036331a, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: ff4582a42cae5644e898dbb526c93257, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f68f6870b70b464987737edf036331a, type: 3}
 --- !u!1001 &1112396203
@@ -3398,6 +3465,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d68b57fbe77734429cf168fe02f075d, type: 3}
+--- !u!1 &1844240405 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6845943066036072369, guid: 53bc1230189e58c4f98ab0d2ddf58770, type: 3}
+  m_PrefabInstance: {fileID: 1008542176}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1854475921
 PrefabInstance:
   m_ObjectHideFlags: 0
