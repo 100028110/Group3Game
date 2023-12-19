@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 64015b5ff0d41be4ca7f5c1d46c55e26
+guid: 83e7e89eff5771f4da4977f63af15bca
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerIdleAnimation_0
+      name: PlayerWalk_0
       rect:
         serializedVersion: 2
         x: 99
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10213e810d49dfc4b9ac9982124fc7e4
-      internalID: -243022821
+      spriteID: 2d5b2d126a910124db1c5d29b761d77d
+      internalID: -75693738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerIdleAnimation_1
+      name: PlayerWalk_1
       rect:
         serializedVersion: 2
         x: 355
@@ -152,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2ed12458dada5a4d88f6c92596aa750
-      internalID: -875102757
+      spriteID: aaf92815c5634ca4b827667838df1d84
+      internalID: 746916234
       vertices: []
       indices: 
       edges: []
@@ -169,8 +169,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PlayerIdleAnimation_0: -243022821
-      PlayerIdleAnimation_1: -875102757
+      PlayerWalk_0: -75693738
+      PlayerWalk_1: 746916234
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

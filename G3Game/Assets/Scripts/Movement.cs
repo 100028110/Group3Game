@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    
     public Animator playerDashAnimator;
     public float dashSpeed;
     public float movementSpeed;
@@ -16,7 +17,7 @@ public class Movement : MonoBehaviour
     public float damagePlayer;
     public GameObject mySwordCollider;
     private Collider2D obg;
-  
+    private Animator playerIdleWalkingAnim;
     
     // Start is called before the first frame update
     void Start()
@@ -26,10 +27,10 @@ public class Movement : MonoBehaviour
         ogSpeed = movementSpeed;
         rb = GetComponent<Rigidbody2D>();
         StartCoroutine("dash_press");
-        
-      
+        playerIdleWalkingAnim = GetComponent<Animator>();
 
-      
+
+
     }
 
     // Update is called once per frame
@@ -57,6 +58,8 @@ public class Movement : MonoBehaviour
         }
 
         rb.velocity = (Vector2.right*moveX+Vector2.up*moveY).normalized*movementSpeed;
+        Debug.Log("Speed: " + rb.velocity.magnitude);
+        playerIdleWalkingAnim.SetFloat("Speed",rb.velocity.magnitude);
         if (Input.GetMouseButtonDown(0))
         {
             weaponAnim.SetTrigger("Attack");
