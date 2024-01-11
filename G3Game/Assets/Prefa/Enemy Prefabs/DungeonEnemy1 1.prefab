@@ -195,7 +195,8 @@ MonoBehaviour:
   swordCollider: {fileID: 5807893728638716477}
   damage: 10
   health: 15
-  nextScene: 
+  nextScene: Dungeon 2
+  knockbackForce: 6
 --- !u!95 &1815721502296301505
 Animator:
   serializedVersion: 5
