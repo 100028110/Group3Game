@@ -21,6 +21,7 @@ public class EnemyMovment : MonoBehaviour
     private Animator anim;
     private Rigidbody2D playerRb;
     private Vector2 knockbackDirection;
+    private bool isReady;
 
     void Start()
     {
@@ -28,6 +29,9 @@ public class EnemyMovment : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         swordCollider.SetActive(false);
+        
+        isReady = true;
+        StartCoroutine("coolDown");
     }
 
     private void Update()
@@ -58,14 +62,30 @@ public class EnemyMovment : MonoBehaviour
 
       
             playerRb = col.gameObject.GetComponent<Rigidbody2D>();
-            if (playerRb != null)
+            if (playerRb != null && isReady)
             {
+               
                 
                 knockbackDirection = (col.transform.position - transform.position).normalized;
                 StartCoroutine("PlayerKnockback");
                 // Damage the player
                 GameObject.Find("HealthManger").GetComponent<HealthManger>().HealthAmount -= damage;
+                isReady = false;
+
+
             }
+            
+        }
+    }
+
+    IEnumerator coolDown()
+    {
+        while (true)
+        {
+            
+            yield return new WaitForSeconds(2);
+            isReady = true;
+
         }
     }
 
@@ -81,6 +101,7 @@ public class EnemyMovment : MonoBehaviour
             currPush *= 0.9f;
             yield return delay;
         }
+       
     }
 
     private void PlayerDetected()
@@ -99,7 +120,7 @@ public class EnemyMovment : MonoBehaviour
                 self.rotation = Quaternion.identity;
             }
 
-            if (Vector3.Distance(self.position, hit.transform.position) < attackRange)
+            if (Vector3.Distance(self.position, hit.transform.position) < attackRange && isReady)
             {
                 anim.SetTrigger("Attack");
                 swordCollider.SetActive(true);
