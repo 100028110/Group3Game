@@ -40,64 +40,66 @@ public class Movement : MonoBehaviour
     {
         float moveX = 0;
         float moveY = 0;
+        var particleSystem = ani.GetComponent<ParticleSystem>();
+        var mainModule=  particleSystem.main;
+        var particleSystem2 = ani2.GetComponent<ParticleSystem>();
+        var mainModule2 = particleSystem2.main;
+         
+        
         if (Input.GetKey("a"))
         {
             transform.rotation = Quaternion.Euler(Vector3.up * 180f);
             moveX--;
            
            
-            var particleSystem = ani.GetComponent<ParticleSystem>();
-            var mainModule = particleSystem.main;
+             
+             
             mainModule.startSize = 1;
-            var particleSystem2 = ani2.GetComponent<ParticleSystem>();
-            var mainModule2 = particleSystem2.main;
+        
             mainModule2.startSize = 1;
 // Updated code using 'main.loop' property
         
             
 
         }
-        else if (Input.GetKey("d"))
+         if (Input.GetKey("d"))
         {
             transform.rotation = Quaternion.identity;
             moveX++;
-            var particleSystem = ani.GetComponent<ParticleSystem>();
-            var mainModule = particleSystem.main;
+            
+             
             mainModule.startSize = 1;
-            var particleSystem2 = ani2.GetComponent<ParticleSystem>();
-            var mainModule2 = particleSystem2.main;
+           
             mainModule2.startSize = 1;
         }
-        else if (Input.GetKey("w"))
+         if (Input.GetKey("w"))
         {
             moveY++;
-            var particleSystem = ani.GetComponent<ParticleSystem>();
-            var mainModule = particleSystem.main;
             mainModule.startSize = 1;
-            var particleSystem2 = ani2.GetComponent<ParticleSystem>();
-            var mainModule2 = particleSystem2.main;
+           
             mainModule2.startSize = 1;
         }
-        else if(Input.GetKey("s"))
+         if(Input.GetKey("s"))
         {
             moveY--;
-            var particleSystem = ani.GetComponent<ParticleSystem>();
-            var mainModule = particleSystem.main;
             mainModule.startSize = 1;
-            var particleSystem2 = ani2.GetComponent<ParticleSystem>();
-            var mainModule2 = particleSystem2.main;
+           
             mainModule2.startSize = 1;
         }
-        else
-        {
-            var particleSystem = ani.GetComponent<ParticleSystem>();
-            var mainModule = particleSystem.main;
-            mainModule.startSize = 0;
-            var particleSystem2 = ani2.GetComponent<ParticleSystem>();
-            var mainModule2 = particleSystem2.main;
-            mainModule2.startSize = 0;
+
+         if (!Input.GetKey("s") && !Input.GetKey("w") && !Input.GetKey("d") && !Input.GetKey("a"))
+         {
+             mainModule.startSize = 0;
+           
+             mainModule2.startSize = 0;
+             
+         }
+         
+        
+        
+        
             
-        }
+        
 
         rb.velocity = (Vector2.right*moveX+Vector2.up*moveY).normalized*movementSpeed;
         Debug.Log("Speed: " + rb.velocity.magnitude);
