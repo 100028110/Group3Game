@@ -18,6 +18,8 @@ public class Movement : MonoBehaviour
     public GameObject mySwordCollider;
     private Collider2D obg;
     private Animator playerIdleWalkingAnim;
+    public GameObject ani;
+    public GameObject  ani2;
     
     // Start is called before the first frame update
     void Start()
@@ -42,19 +44,59 @@ public class Movement : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(Vector3.up * 180f);
             moveX--;
+           
+           
+            var particleSystem = ani.GetComponent<ParticleSystem>();
+            var mainModule = particleSystem.main;
+            mainModule.startSize = 1;
+            var particleSystem2 = ani2.GetComponent<ParticleSystem>();
+            var mainModule2 = particleSystem2.main;
+            mainModule2.startSize = 1;
+// Updated code using 'main.loop' property
+        
+            
+
         }
-        if (Input.GetKey("d"))
+        else if (Input.GetKey("d"))
         {
             transform.rotation = Quaternion.identity;
             moveX++;
+            var particleSystem = ani.GetComponent<ParticleSystem>();
+            var mainModule = particleSystem.main;
+            mainModule.startSize = 1;
+            var particleSystem2 = ani2.GetComponent<ParticleSystem>();
+            var mainModule2 = particleSystem2.main;
+            mainModule2.startSize = 1;
         }
-        if (Input.GetKey("w"))
+        else if (Input.GetKey("w"))
         {
             moveY++;
+            var particleSystem = ani.GetComponent<ParticleSystem>();
+            var mainModule = particleSystem.main;
+            mainModule.startSize = 1;
+            var particleSystem2 = ani2.GetComponent<ParticleSystem>();
+            var mainModule2 = particleSystem2.main;
+            mainModule2.startSize = 1;
         }
-        if (Input.GetKey("s"))
+        else if(Input.GetKey("s"))
         {
             moveY--;
+            var particleSystem = ani.GetComponent<ParticleSystem>();
+            var mainModule = particleSystem.main;
+            mainModule.startSize = 1;
+            var particleSystem2 = ani2.GetComponent<ParticleSystem>();
+            var mainModule2 = particleSystem2.main;
+            mainModule2.startSize = 1;
+        }
+        else
+        {
+            var particleSystem = ani.GetComponent<ParticleSystem>();
+            var mainModule = particleSystem.main;
+            mainModule.startSize = 0;
+            var particleSystem2 = ani2.GetComponent<ParticleSystem>();
+            var mainModule2 = particleSystem2.main;
+            mainModule2.startSize = 0;
+            
         }
 
         rb.velocity = (Vector2.right*moveX+Vector2.up*moveY).normalized*movementSpeed;
